@@ -1,0 +1,4 @@
+title: plan.timtom.tv
+description: notes
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
