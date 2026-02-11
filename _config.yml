@@ -2,3 +2,7 @@ title: plan.timtom.tv
 description: notes
 permalink: /:year/:month/:day/:title/
 markdown: kramdown
+url: "https://plan.timtom.tv"
+baseurl: ""
+plugins:
+  - jekyll-feed
