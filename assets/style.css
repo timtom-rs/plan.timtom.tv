@@ -1,2 +1,123 @@
-body { margin: 32px; font: 16px/1.6 system-ui, sans-serif; max-width: 700px; }
-a { color: inherit; }
+:root {
+    --color-text: #111;
+    --color-background: #fff;
+    --link-color: #00bc65;
+    --link-color-hover: #5aa55e;
+    --header-color: #599d5c;
+    --div-color: #dbffdb;
+    --div-color-hover: #c1ffc1;
+}
+
+[data-theme="dark"] {
+    --color-text: #fff;
+    --color-background: #111;
+    --link-color: #00bc65;
+    --link-color-hover: #5aa55e;
+    --header-color: #00bc65;
+    --div-color: #222;
+    --div-color-hover: #333;
+}
+
+html {
+    margin: 32px;
+    font: 16px/1.6 'Inter', system-ui, sans-serif;
+    background-color: var(--color-background);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--color-text);
+    font-size: medium;
+    transition: color 0.2s ease;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+p {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--header-color);
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--header-color);
+    margin: 0px 0px 10px 0px;
+}
+
+a {
+    color: var(--link-color);
+    transition: color 0.2s ease;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--link-color-hover);
+    text-decoration: underline;
+}
+
+.profile-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.profile-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0px 0px 20px 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--div-color);
+    transition: background-color 0.2s ease;
+}
+
+.post:hover {
+    background-color: var(--div-color-hover);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    margin: 40px 0px 20px 0px;
+    color: var(--color-text);
+}
+
+.post-date {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.post-content p {
+    line-height: 1.8;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
