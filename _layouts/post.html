@@ -1,7 +1,32 @@
 ---
 layout: default
 ---
-<p><a href="/">← Home</a></p>
-<h1>{{ page.title }}</h1>
-<p><small>{{ page.date | date: "%Y-%m-%d" }}</small></p>
-{{ content }}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>{{ site.title }}</title>
+  <link href="/assets/pfp.png" rel="icon" type="image/png">
+
+  <script src="/assets/theme.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <p><a href="/">← Back</a></p>
+  <h1>{{ page.title }}</h1>
+  <p class="post-date"><small>{{ page.date | date: "%A %b %-d, %Y" }}</small></p>
+
+  <br>
+
+  <div class="post-content">{{ content }}</div>
+
+  <footer>
+    <p><a href="{{ '/feed.xml' | relative_url }}">RSS Feed</a></p>
+    <p><a onclick="toggleTheme()">Dark/light theme</a></p>
+  </footer>
+</body>
+</html>
