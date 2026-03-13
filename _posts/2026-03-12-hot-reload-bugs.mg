@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hot Reload Bug"
+title: "Hot Reload Bugs"
 ---
 
 UGHHHHHHH I spent all day fixing several unrelated bugs in the hot-reload code. Sometimes software development means smashing your head against a wall trying to figure out why something isn't working. It sure doesn't feel like progress.
